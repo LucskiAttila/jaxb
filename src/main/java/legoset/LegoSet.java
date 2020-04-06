@@ -13,7 +13,7 @@ import lombok.Data;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-@XmlRootElement
+@XmlRootElement(name = "legoSet")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = {"name", "theme", "subtheme", "year", "pieces", "tags", "minifigs", "weight", "url"})
 @Data
