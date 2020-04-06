@@ -6,9 +6,12 @@ import java.util.Set;
 
 import java.time.Year;
 
+import java.net.URL;
+
 import lombok.Data;
 
 import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
