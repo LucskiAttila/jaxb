@@ -28,9 +28,9 @@ public class Main {
         LegoSet.setWeigth(new Weight("kg", 0.89));
         LegoSet.setUrl(new URL("https://brickset.com/sets/75211-1/Imperial-TIE-Fighter"));
 
-        JAXBHelper.toXML(legoset, System.out);
+        JAXBHelper.toXML(LegoSet, System.out);
 
-        JAXBHelper.toXML(legoset, new FileOutputStream("legoset.xml"));
+        JAXBHelper.toXML(LegoSet, new FileOutputStream("legoset.xml"));
         System.out.println(JAXBHelper.fromXML(LegoSet.class, new FileInputStream("legoset.xml")));
     }
 
