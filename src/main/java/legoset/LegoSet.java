@@ -22,6 +22,7 @@ public class LegoSet {
     private String name;
     private String theme;
     private String subtheme;
+    
     @XmlJavaTypeAdapter(YearAdapter.class)
     private Year year;
     private int pieces;
