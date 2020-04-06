@@ -18,7 +18,7 @@ public class Minifig {
 
     public Minifig(String title, int count) {
         this.title = title;
-        this.count = length;
+        this.count = count;
     }
 
 }
