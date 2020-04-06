@@ -33,7 +33,8 @@ public class Main {
         LegoSet.setMinifigs(minifigs);
         LegoSet.setWeigth(new Weight(0.89, "kg"));
         LegoSet.setUrl(new URL("https://brickset.com/sets/75211-1/Imperial-TIE-Fighter"));
-
+        LegoSet.setNumber(75211);
+        
         JAXBHelper.toXML(LegoSet, System.out);
 
         JAXBHelper.toXML(LegoSet, new FileOutputStream("legoset.xml"));
