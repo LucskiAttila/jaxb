@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = {"name", "theme", "subtheme", "year", "pieces", "tags", "minifigs", "url"})
+@XmlType(propOrder = {"name", "theme", "subtheme", "year", "pieces", "tags", "minifigs", "weight", "url"})
 @Data
 public class LegoSet {
 
@@ -34,6 +34,8 @@ public class LegoSet {
     @XmlElement(name = "minifig")
     private List<Minfig> minifigs;
 
+    private Weigth weigth;
+    
     @XmlAttribute
     private String number;
 
