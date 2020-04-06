@@ -7,7 +7,7 @@ import java.time.Year;
 import java.util.List;
 import java.util.Set;
 import java.util.ArrayList;
-import java.util.TreeSet;
+import java.util.HashSet;
 
 import jaxb.JAXBHelper;
 
@@ -20,7 +20,7 @@ public class Main {
         LegoSet.setSubtheme("Solo");
         LegoSet.setYear(Year.of(2018));
         LegoSet.setPieces(519);
-        TreeSet<String> tags = new TreeSet<String>();
+        Set<String> tags = new HashSet<String>();
         tags.add("Starfighter");
         tags.add("Stormtrooper");
         tags.add("Star Wars");
