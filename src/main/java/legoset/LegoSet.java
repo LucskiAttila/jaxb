@@ -36,9 +36,10 @@ public class LegoSet {
     private List<Minfig> minifigs;
 
     private Weigth weigth;
+
+    private URL url;
     
     @XmlAttribute
     private String number;
 
-    private URL url;
 }
